@@ -1,8 +1,8 @@
-const button = document.querySelector("button");
 const input = document.querySelector("input");
 const cont = document.getElementById("cont");
 const form = document.querySelector("form");
 const mytask = document.getElementById("mytask");
+const button = document.getElementById("button");
 
 console.log(cont);
 
@@ -49,7 +49,7 @@ cont.addEventListener("click", (event) => {
   }
 });
 
-form.addEventListener("submit", (event) => {
+button.addEventListener("click", (event) => {
   event.preventDefault();
   const taskk = ` 
         <div class="task" id="mytask">
